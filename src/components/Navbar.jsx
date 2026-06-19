@@ -135,7 +135,7 @@ const Navbar = () => {
       )}
 
       <div
-        className={`fixed top-0 right-0 bottom-0 w-72 bg-white z-50 shadow-2xl md:hidden transition-transform duration-300 ${mobileOpen ? "translate-x-0" : "translate-x-full"
+        className={`fixed top-0 right-0 bottom-0 w-72 card-glass border-l border-white/20 z-50 shadow-2xl md:hidden transition-transform duration-300 ${mobileOpen ? "translate-x-0" : "translate-x-full"
           }`}
         style={{ animation: mobileOpen ? "slideDrawer 0.3s ease" : "none" }}
       >

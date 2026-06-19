@@ -157,14 +157,14 @@ const Home = () => {
 
       <section ref={addRevealRef} className="reveal container-main py-10">
         <div
-          className="relative overflow-hidden rounded-md p-10 md:p-14 text-center border"
-          style={{ background: "#e6f1fa", borderColor: "var(--color-primary)" }}
+          className="card-glass relative overflow-hidden rounded-md p-10 md:p-14 text-center border"
+          style={{ borderColor: "var(--color-primary)" }}
         >
           <div className="relative z-10">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-[#0071ce]" style={{ letterSpacing: "-0.02em" }}>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-emerald-700" style={{ letterSpacing: "-0.02em" }}>
               Rollback on Fresh Fruits
             </h2>
-            <p className="mt-3 text-[#005bb5] max-w-md mx-auto font-medium">
+            <p className="mt-3 text-emerald-800 max-w-md mx-auto font-medium">
               Every Day Low Prices on farm-fresh produce.
             </p>
             <Link
@@ -226,7 +226,7 @@ const Home = () => {
               Dairy & Cold Drinks
             </h2>
           </div>
-          <Link to="/products" className="text-sm font-semibold text-[#0071ce] hover:underline">
+          <Link to="/products" className="text-sm font-semibold text-emerald-600 hover:underline">
             View All →
           </Link>
         </div>
@@ -242,9 +242,9 @@ const Home = () => {
 
       <section ref={addRevealRef} className="reveal container-main py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          <div className="bg-white border p-6 flex flex-col justify-between relative min-h-[250px]">
+          <div className="card-glass p-6 flex flex-col justify-between relative min-h-[250px]">
             <div>
-              <span className="inline-block p-2 rounded-full bg-blue-100 mb-4 text-[#0071ce]">
+              <span className="inline-block p-2 rounded-full bg-emerald-100 mb-4 text-emerald-600">
                 <FaLeaf className="text-xl" />
               </span>
               <h3 className="text-xl font-bold text-slate-900 mb-2">Farm to Table</h3>
@@ -252,9 +252,9 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="bg-white border p-6 flex flex-col justify-between relative min-h-[250px]">
+          <div className="card-glass p-6 flex flex-col justify-between relative min-h-[250px]">
             <div>
-              <span className="inline-block p-2 rounded-full bg-blue-100 mb-4 text-[#0071ce]">
+              <span className="inline-block p-2 rounded-full bg-emerald-100 mb-4 text-emerald-600">
                 <FaClock className="text-xl" />
               </span>
               <h3 className="text-xl font-bold text-slate-900 mb-2">Fast Delivery</h3>
@@ -262,17 +262,17 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="bg-[#0071ce] border p-6 flex flex-col justify-between relative min-h-[250px] text-white">
+          <div className="card p-6 flex flex-col justify-between relative min-h-[250px] text-white" style={{ background: "var(--gradient-primary)" }}>
             <div className="h-full flex flex-col justify-center items-center text-center">
-              <h3 className="text-2xl font-bold mb-3">Walmart+</h3>
-              <p className="text-blue-100">Free delivery from your store. Free shipping with no order minimum. Save on fuel.</p>
+              <h3 className="text-2xl font-bold mb-3">FreshCart+</h3>
+              <p className="text-emerald-50">Free delivery from your store. Free shipping with no order minimum. Save on fuel.</p>
               <button className="mt-6 bg-yellow-400 text-slate-900 px-6 py-2 rounded-full font-bold">Start Free Trial</button>
             </div>
           </div>
         </div>
       </section>
 
-      <section ref={addRevealRef} className="reveal py-20 bg-slate-50 border-y border-slate-100 overflow-hidden">
+      <section ref={addRevealRef} className="reveal py-20 border-y border-emerald-100/30 overflow-hidden">
         <div className="container-main mb-10">
           <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900" style={{ letterSpacing: "-0.02em" }}>
             Loved by thousands.
@@ -282,7 +282,7 @@ const Home = () => {
 
         <div className="flex gap-6 overflow-x-auto hide-scrollbar snap-x-mandatory px-6 md:px-24 pb-8 -mx-6 md:-mx-24">
           {reviews.map((review) => (
-            <div key={review.id} className="snap-center shrink-0 w-[320px] md:w-[400px] card p-8 bg-white border border-slate-100/50 shadow-sm hover:shadow-md transition-shadow">
+            <div key={review.id} className="snap-center shrink-0 w-[320px] md:w-[400px] card-glass p-8 border border-emerald-100/30 shadow-sm hover:shadow-md transition-shadow">
               <FaQuoteLeft className="text-emerald-100 text-4xl mb-6" />
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
@@ -305,16 +305,16 @@ const Home = () => {
       </section>
 
       <section ref={addRevealRef} className="reveal container-main py-10">
-        <div className="bg-[#0071ce] p-8 md:p-12 relative flex flex-col md:flex-row items-center justify-between gap-12 shadow-sm rounded-md">
+        <div className="card p-8 md:p-12 relative flex flex-col md:flex-row items-center justify-between gap-12 shadow-sm rounded-md" style={{ background: "var(--gradient-primary)" }}>
           <div className="relative z-10 max-w-xl text-center md:text-left text-white">
             <h2 className="text-3xl md:text-4xl font-bold">
               Shop faster with the FreshCart App
             </h2>
-            <p className="mt-4 text-blue-100 text-lg">
+            <p className="mt-4 text-emerald-50 text-lg">
               Scan items in store, make lists, and track your delivery.
             </p>
             <div className="mt-6 flex flex-wrap gap-4 justify-center md:justify-start">
-              <button className="bg-white text-[#0071ce] font-bold px-6 py-2 rounded-full">
+              <button className="bg-white text-emerald-600 font-bold px-6 py-2 rounded-full hover:bg-emerald-50 transition-colors">
                 Download Now
               </button>
             </div>
@@ -322,7 +322,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section ref={addRevealRef} className="reveal bg-white border-t py-16 text-center">
+      <section ref={addRevealRef} className="reveal card-glass border-t py-16 text-center">
         <div className="container-main max-w-2xl mx-auto">
           <h2 className="text-2xl font-bold text-slate-900">
             Sign up for savings
@@ -335,9 +335,9 @@ const Home = () => {
             <input
               type="email"
               placeholder="Enter your email address"
-              className="flex-1 px-4 py-3 border border-gray-300 text-sm outline-none focus:border-[#0071ce]"
+              className="flex-1 px-4 py-3 border border-emerald-300/50 card-glass text-sm outline-none focus:border-emerald-500"
             />
-            <button className="bg-[#0071ce] text-white px-6 py-3 font-bold text-sm hover:bg-[#005bb5]">
+            <button className="btn-primary px-6 py-3 text-sm">
               Subscribe
             </button>
           </div>
