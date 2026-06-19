@@ -1,16 +1,90 @@
-# React + Vite
+# FreshCart 🛒
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FreshCart is a modern grocery e-commerce frontend built using React and Vite. It provides a clean shopping experience with product browsing, cart management, wishlist functionality, authentication pages, and responsive design.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Home page with hero section
+* Product listing page
+* Product details page
+* Shopping cart
+* Wishlist management
+* Login and Register pages
+* Responsive UI
+* React Context API for state management
+* Fast development with Vite
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React.js
+* Vite
+* React Router DOM
+* Context API
+* CSS
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+src/
+├── components/
+├── pages/
+├── context/
+├── assets/
+├── App.jsx
+└── main.jsx
+```
+
+## Installation
+
+1. Clone the repository
+
+```bash
+git clone <repository-url>
+```
+
+2. Navigate to the project folder
+
+```bash
+cd FreshCart
+```
+
+3. Install dependencies
+
+```bash
+npm install
+```
+
+4. Start the development server
+
+```bash
+npm run dev
+```
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+## Preview Production Build
+
+```bash
+npm run preview
+```
+
+## Future Improvements
+
+* Backend integration
+* User authentication with JWT
+* Payment gateway integration
+* Product search and filtering
+* Order management
+* Admin dashboard
+
+## Author
+
+Aashish
+
+## License
+
+This project is open source and available under the MIT License.
